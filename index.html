@@ -6,18 +6,18 @@
 <meta name="theme-color" content="#1b2a6b">
 <title>Comercial Andina S.A.C. | Tienda móvil</title>
 <style>
-:root{--blue:#1b2a6b;--blue2:#2f4bb8;--violet:#6d28d9;--violet-l:#ede4fb;--wine:#7a1633;--wine-l:#f7e4ea;--bg:#f3f2fa;--card:#fff;--ink:#16163a;--mute:#5a5a7a;--line:#d9d8ea;--ok:#1f6f5c;--bar:68px}
+:root{--blue:#1b2a6b;--blue2:#2f4bb8;--violet:#6d28d9;--violet-l:#ede4fb;--wine:#7a1633;--wine-l:#f7e4ea;--bg:#f3f2fa;--card:#fff;--wine-d:#4a0b1f;--ink:#16163a;--mute:#5a5a7a;--line:#d9d8ea;--ok:#1f6f5c;--bar:76px}
 *{box-sizing:border-box;margin:0}
 [hidden]{display:none!important}
-html{-webkit-text-size-adjust:100%}
-body{font:16px/1.45 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink);min-height:100dvh}
+html{-webkit-text-size-adjust:100%;font-size:calc(112.5% * var(--fs,1))}
+body{font:1rem/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--ink);min-height:100dvh}
 button,input,select{font:inherit;color:inherit;max-width:100%}
-button{cursor:pointer;border:0;min-height:44px;min-width:44px;transition:transform .08s,filter .15s,background .15s}
+button{cursor:pointer;border:0;min-height:52px;min-width:52px;transition:transform .08s,filter .15s,background .15s}
 button:active{transform:scale(.96);filter:brightness(.9)}
 :focus-visible{outline:3px solid var(--violet);outline-offset:2px}
 .app{min-height:100dvh;display:flex;flex-direction:column}
 /* Encabezado + navegación */
-header.top{background:var(--blue);color:#fff;position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0)}
+header.top{background:linear-gradient(95deg,var(--blue) 0%,#3b1f86 55%,var(--wine) 100%);box-shadow:0 2px 12px rgba(27,42,107,.35);color:#fff;position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0)}
 .wrap{max-width:1240px;margin:0 auto;padding:10px clamp(12px,3vw,32px);display:flex;align-items:center;gap:12px}
 .brand{flex:1;min-width:0}
 .brand h1{font-size:clamp(1rem,3.6vw,1.3rem);line-height:1.2}
@@ -25,7 +25,7 @@ header.top{background:var(--blue);color:#fff;position:sticky;top:0;z-index:20;pa
 .cartbtn{background:rgba(255,255,255,.15);color:#fff;border-radius:12px;position:relative;padding:0 14px;font-weight:600;font-size:1.2rem}
 .badge{position:absolute;top:-6px;right:-6px;background:var(--wine);color:#fff;border-radius:999px;min-width:22px;height:22px;font-size:.75rem;font-weight:700;display:grid;place-items:center;padding:0 5px;border:2px solid #fff;line-height:1}
 nav.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-top:2px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0)}
-nav.bar button{background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:var(--bar);font-size:.78rem;font-weight:600;color:var(--mute);position:relative}
+nav.bar button{background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:var(--bar);font-size:.85rem;font-weight:700;color:var(--mute);position:relative}
 nav.bar svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 nav.bar button[aria-current=page]{color:var(--violet)}
 nav.bar button[aria-current=page]::before{content:"";position:absolute;top:0;left:25%;right:25%;height:4px;border-radius:0 0 4px 4px;background:var(--violet)}
@@ -43,26 +43,26 @@ nav.bar .badge{top:6px;right:calc(50% - 28px)}
 main{flex:1;width:100%;max-width:1240px;margin:0 auto;padding:clamp(14px,3vw,32px);padding-bottom:calc(var(--bar) + 28px + env(safe-area-inset-bottom,0))}
 @media(min-width:768px){main{padding-bottom:clamp(14px,3vw,32px)}}
 main:focus{outline:none}
-h2{font-size:clamp(1.1rem,3vw,1.5rem);margin:24px 0 12px;color:var(--blue)}
+h2{font-size:clamp(1.25rem,3.2vw,1.7rem);margin:28px 0 14px;color:var(--blue);padding-left:12px;border-left:6px solid var(--wine)}
 h2:first-child{margin-top:0}
 .search{display:flex;gap:8px;max-width:760px}
-.search input,.tools input{flex:1;min-width:0;min-height:48px;border:2px solid var(--line);border-radius:12px;padding:0 14px;background:#fff}
+.search input,.tools input{flex:1;min-width:0;min-height:54px;border:2px solid var(--line);border-radius:12px;padding:0 14px;background:#fff}
 .search input:focus,.tools input:focus,.field:focus,select:focus{border-color:var(--violet);outline:none;box-shadow:0 0 0 3px var(--violet-l)}
-.btn{background:var(--violet);color:#fff;border-radius:12px;padding:0 18px;font-weight:600;min-height:48px}
+.btn{background:var(--violet);color:#fff;border-radius:12px;padding:0 18px;font-weight:700;min-height:54px}
 .btn:hover{filter:brightness(1.1)}
 .btn.blue{background:var(--blue)}.btn.wine{background:var(--wine)}
 .btn.ghost{background:#fff;color:var(--blue);border:2px solid var(--blue)}
-.banner{margin-top:16px;border-radius:20px;padding:clamp(18px,4vw,44px);color:#fff;background:linear-gradient(120deg,var(--blue),var(--violet) 70%,var(--wine));display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;overflow:hidden}
+.banner{margin-top:16px;border-radius:20px;padding:clamp(18px,4vw,44px);color:#fff;background:linear-gradient(120deg,var(--blue),var(--violet) 45%,var(--wine) 100%);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;overflow:hidden}
 .banner h3{font-size:clamp(1.4rem,4.5vw,2.6rem);line-height:1.15}
 .banner p{margin:8px 0 16px;opacity:.92;font-size:clamp(.9rem,2vw,1.1rem);max-width:46ch}
 .banner .btn{background:#fff;color:var(--blue)}
 .banner svg{width:clamp(80px,18vw,220px);opacity:.4}
 @media(max-width:420px){.banner{grid-template-columns:1fr}.banner svg{display:none}}
 /* Categorías */
-.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,104px),1fr));gap:clamp(8px,2vw,16px)}
-.cat{border:2px solid var(--line);border-radius:16px;padding:14px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:96px;font-size:clamp(.78rem,2.6vw,.95rem);font-weight:700;color:var(--blue);text-align:center;overflow-wrap:anywhere;line-height:1.15}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr));gap:clamp(8px,2vw,16px)}
+.cat{border:2px solid var(--line);border-radius:16px;padding:14px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:96px;font-size:clamp(.95rem,3vw,1.08rem);font-weight:700;color:var(--blue);text-align:center;overflow-wrap:anywhere;line-height:1.15}
 .cat svg{width:clamp(34px,8vw,48px);height:clamp(34px,8vw,48px);flex:none}
-.cat:hover{border-color:var(--violet);transform:translateY(-2px)}
+.cat:hover{border-color:var(--wine);transform:translateY(-2px)}
 /* Productos */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr));gap:clamp(10px,2vw,20px)}
 @media(min-width:520px){.grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}}
@@ -70,22 +70,22 @@ h2:first-child{margin-top:0}
 .img{position:relative;display:grid;place-items:center;overflow:hidden}
 .card .img{aspect-ratio:4/3}
 .img svg{width:55%;height:55%}
-.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s}
+.img img{max-width:100%;max-height:100%;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:5%;opacity:0;transition:opacity .3s}
 .img img.ok{opacity:1}
 .tag{position:absolute;top:8px;left:8px;z-index:1;background:var(--wine);color:#fff;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:999px}
 .card .b{padding:12px;display:flex;flex-direction:column;gap:4px;flex:1}
-.card h3{font-size:clamp(.85rem,2.5vw,.98rem);line-height:1.25;flex:1;overflow-wrap:anywhere}
+.card h3{font-size:clamp(.98rem,2.6vw,1.08rem);line-height:1.25;flex:1;overflow-wrap:anywhere}
 .cat-l{font-size:.78rem;color:var(--mute)}
 .price{font-weight:800;color:var(--blue);font-size:1.08rem}
 .price s{font-weight:400;color:var(--mute);font-size:.8rem;margin-left:6px;white-space:nowrap}
-.card .btn{width:100%;margin-top:8px}
+.card .btn{width:100%;margin-top:8px;padding:8px 10px;line-height:1.2;background:var(--wine)}
 .tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .tools input{flex:1 1 240px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;padding:14px 0 6px}
 .chip{background:#fff;border:2px solid var(--line);border-radius:999px;padding:0 18px;font-weight:600;color:var(--blue)}
 .chip[aria-pressed=true]{background:var(--violet);border-color:var(--violet);color:#fff}
 .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:10px 0 14px}
-select{min-height:44px;border:2px solid var(--line);border-radius:10px;padding:0 10px;background:#fff}
+select{min-height:52px;border:2px solid var(--line);border-radius:10px;padding:0 10px;background:#fff}
 .mute{color:var(--mute);font-size:.92rem}
 .empty{text-align:center;padding:40px 14px;background:#fff;border-radius:16px;border:2px dashed var(--line)}
 .empty p{margin:0 0 14px}
@@ -111,7 +111,7 @@ select{min-height:44px;border:2px solid var(--line);border-radius:10px;padding:0
 .form{display:grid;gap:4px 16px;max-width:760px}
 @media(min-width:700px){.form{grid-template-columns:1fr 1fr}.form .full{grid-column:1/-1}}
 label{display:block;font-weight:600;margin:12px 0 4px}
-.field{width:100%;min-height:48px;border:2px solid var(--line);border-radius:12px;padding:0 14px;background:#fff}
+.field{width:100%;min-height:54px;border:2px solid var(--line);border-radius:12px;padding:0 14px;background:#fff}
 .note{background:var(--violet-l);border-radius:14px;padding:14px;margin-top:20px;font-size:.9rem;max-width:760px}
 /* Modal y aviso */
 .ov{position:fixed;inset:0;background:rgba(22,22,58,.6);display:flex;align-items:center;justify-content:center;padding:20px;z-index:50}
@@ -127,6 +127,17 @@ label{display:block;font-weight:600;margin:12px 0 4px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 a.sr:focus{position:fixed;top:8px;left:8px;width:auto;height:auto;clip:auto;background:#fff;color:var(--blue);padding:10px 14px;border-radius:8px;z-index:99}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.dlg h2{border:0;padding:0}
+.tool{background:rgba(255,255,255,.16);color:#fff;border-radius:12px;font-weight:800;padding:0 12px;font-size:1.05rem}
+.tool[aria-pressed=false]{opacity:.7}
+.card{transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(122,22,51,.22)}
+.band{margin-top:28px;padding:clamp(14px,3vw,28px);border-radius:22px;background:linear-gradient(135deg,var(--wine),var(--wine-d))}
+.band h2{margin-top:0;color:#fff;border-color:#fff}
+.perks{list-style:none;padding:0;margin-top:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px}
+.perks li{background:#fff;border-radius:14px;border-left:6px solid var(--wine);padding:12px 14px;display:flex;flex-direction:column}
+.perks b{color:var(--blue)}.perks span{color:var(--mute);font-size:.9rem}
+@media(max-width:379px){.grid{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -141,6 +152,7 @@ a.sr:focus{position:fixed;top:8px;left:8px;width:auto;height:auto;clip:auto;back
       <button data-go="cart"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 2h4l3 12h11l2-8H6"/></svg><span>Carrito</span><span class="badge" id="nb" hidden>0</span></button>
       <button data-go="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg><span>Perfil</span></button>
     </nav>
+    <button class="tool" id="fsb" aria-label="Tamaño de letra">Aa</button><button class="tool" id="sndb" aria-pressed="true">🔊</button>
     <button class="cartbtn" data-go="cart" aria-label="Ir al carrito"><span aria-hidden="true">🛒</span><span class="badge" id="hb" hidden>0</span></button>
    </div>
   </header>
@@ -155,10 +167,10 @@ a.sr:focus{position:fixed;top:8px;left:8px;width:auto;height:auto;clip:auto;back
         <div><h3>Tecnología para tu día</h3><p>Compra en pocos pasos desde tu teléfono, tableta o computadora.</p><button class="btn" data-go="catalog">Ver catálogo</button></div>
         <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="32" rx="4" fill="#fff"/><rect x="2" y="46" width="60" height="6" rx="3" fill="#fff"/></svg>
       </div>
+      <ul class="perks"><li><b>Envío S/ 15</b><span>Costo fijo por pedido</span></li><li><b>Compra en 3 pasos</b><span>Agrega, revisa y confirma</span></li><li><b>Pago simulado</b><span>No se realiza ningún cobro</span></li></ul>
       <h2>Categorías</h2>
       <div class="cats" id="cats"></div>
-      <h2>Ofertas del día</h2>
-      <div class="grid" id="offers"></div>
+      <div class="band"><h2>Ofertas del día</h2><div class="grid" id="offers"></div></div>
     </section>
 
     <section id="v-catalog" aria-label="Catálogo" hidden>
@@ -245,10 +257,11 @@ function icon(c){
   Accesorios:'<rect x="18" y="6" width="28" height="50" rx="14" '+s+'/><path d="M32 6v20M18 26h28" stroke="#fff" stroke-width="3"/>'};
   return '<svg viewBox="0 0 64 64" aria-hidden="true">'+m[c]+'</svg>';
 }
-function imgSrc(p){return p.img||"https://loremflickr.com/480/360/"+p.k+"?lock="+p.id}
-function thumb(p){return '<div class="img" style="background:'+COL[p.c][0]+'">'+icon(p.c)+'<img src="'+imgSrc(p)+'" alt="'+p.n+'" loading="lazy" decoding="async" referrerpolicy="no-referrer">'+(p.o?'<span class="tag">-'+Math.round((1-p.p/p.o)*100)+'%</span>':'')+'</div>'}
-document.addEventListener("load",function(e){if(e.target.tagName==="IMG")e.target.classList.add("ok")},true);
-document.addEventListener("error",function(e){var t=e.target;if(t.tagName==="IMG"){var d=t.parentNode;d.setAttribute("role","img");d.setAttribute("aria-label",t.alt);t.remove()}},true);
+var EXT=["png","jpg","jpeg","webp","avif","gif","svg","jfif","bmp","PNG","JPG","JPEG","WEBP"],best=Math.min(+load("andina_ext",0)||0,EXT.length-1);
+function imgSrc(p){return p.img||"images"+p.id+"."+EXT[best]}
+function thumb(p){return '<div class="img" style="background:'+COL[p.c][0]+'">'+icon(p.c)+'<img src="'+imgSrc(p)+'"'+(p.img?"":' data-i="'+p.id+'" data-x="'+best+'"')+' alt="'+p.n+'" loading="lazy" decoding="async" referrerpolicy="no-referrer">'+(p.o?'<span class="tag">-'+Math.round((1-p.p/p.o)*100)+'%</span>':'')+'</div>'}
+document.addEventListener("load",function(e){if(e.target.tagName==="IMG"){e.target.classList.add("ok");if(e.target.dataset.i){best=+e.target.dataset.x;save("andina_ext",best)}}},true);
+document.addEventListener("error",function(e){var t=e.target;if(t.tagName==="IMG"){var n=(+t.dataset.x||0)+1;if(t.dataset.i&&n<EXT.length){t.dataset.x=n;t.src="images"+t.dataset.i+"."+EXT[n];return}var d=t.parentNode;d.setAttribute("role","img");d.setAttribute("aria-label",t.alt);t.remove()}},true);
 function card(p){
   return '<article class="card">'+thumb(p)+'<div class="b"><span class="cat-l">'+p.c+'</span><h3>'+p.n+'</h3><div class="price">'+money(p.p)+(p.o?'<s>'+money(p.o)+'</s>':'')+'</div>'+
   '<button class="btn" data-a="add" data-id="'+p.id+'" aria-label="Agregar al carrito: '+p.n+'">Agregar al carrito</button></div></article>';
@@ -277,12 +290,18 @@ function renderHome(){
 function renderChips(){
   $("#chips").innerHTML=["Todas"].concat(CATS).map(function(c){return '<button class="chip" data-a="chip" data-c="'+c+'" aria-pressed="'+(ui.cat===c)+'">'+c+'</button>'}).join("");
 }
+function norm(t){return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+function stem(w){return w.length>4&&/es$/.test(w)?w.slice(0,-2):(w.length>3&&/s$/.test(w)?w.slice(0,-1):w)}
+function toks(t){return norm(t).split(/[^a-z0-9]+/).filter(Boolean).map(stem)}
+var SYN={Laptops:"laptop portatil computadora notebook pc",Audio:"audio audifono auricular parlante bocina sonido musica",Impresoras:"impresora impresion tinta imprimir escaner",Gaming:"gamer gaming juego videojuego consola",Monitores:"monitor pantalla display",Accesorios:"accesorio periferico computadora"};
+P.forEach(function(p){p.h=toks(p.n+" "+p.c+" "+SYN[p.c])});
+function matches(p,q){return toks(q).every(function(w){return p.h.some(function(h){return h.indexOf(w)===0||(w.length>3&&h.indexOf(w)>-1)})})}
 function renderList(){
-  var q=ui.q.trim().toLowerCase();
-  var r=P.filter(function(p){return (ui.cat==="Todas"||p.c===ui.cat)&&p.n.toLowerCase().indexOf(q)>-1});
+  var q=ui.q.trim();
+  var r=P.filter(function(p){return (ui.cat==="Todas"||p.c===ui.cat)&&matches(p,q)});
   if(ui.sort)r.sort(function(a,b){return ui.sort==="asc"?a.p-b.p:b.p-a.p});
-  $("#count").textContent=r.length+(r.length===1?" producto":" productos");
-  $("#list").innerHTML=r.length?r.map(card).join(""):'<div class="empty" style="grid-column:1/-1"><p>No encontramos productos con esa búsqueda.</p><button class="btn blue" data-a="reset">Quitar filtros</button></div>';
+  $("#count").textContent=r.length+(r.length===1?" producto":" productos")+(q?' para "'+q+'"':"");
+  $("#list").innerHTML=r.length?r.map(card).join(""):'<div class="empty" style="grid-column:1/-1"><p>No encontramos productos para tu búsqueda. Prueba con otra palabra, por ejemplo "monitor" o "audífonos".</p><button class="btn blue" data-a="reset">Quitar filtros</button></div>';
 }
 
 /* ---------- Carrito (RF04-RF08) ---------- */
@@ -305,28 +324,28 @@ function renderCart(){
 function add(id){
   var i=cart.filter(function(x){return x.id===id})[0];
   i?i.q=Math.min(99,i.q+1):cart.push({id:id,q:1});
-  persist();toast(find(id).n+" agregado al carrito");
+  persist();sfx("add");toast(find(id).n+" agregado al carrito");
 }
 function setQty(id,d){
   var i=cart.filter(function(x){return x.id===id})[0];if(!i)return;
   if(i.q+d<1){return askRemove(id)}
   i.q=Math.min(99,i.q+d);persist();renderCart();refocus("[data-a="+(d>0?"inc":"dec")+"][data-id='"+id+"']");
 }
-function remove(id){cart=cart.filter(function(x){return x.id!==id});persist();renderCart();toast("Producto eliminado")}
+function remove(id){cart=cart.filter(function(x){return x.id!==id});persist();renderCart();sfx("del");toast("Producto eliminado")}
 function askRemove(id){
   dialog({title:"¿Eliminar producto?",text:'Se quitará "'+find(id).n+'" de tu carrito.',
     buttons:[{l:"Cancelar",c:"ghost"},{l:"Confirmar",c:"wine",f:function(){remove(id)}}]});
 }
 function askClear(){
   dialog({title:"¿Vaciar carrito?",text:"Se eliminarán todos los productos. Si cancelas, tu carrito queda igual.",
-    buttons:[{l:"Cancelar",c:"ghost"},{l:"Confirmar",c:"wine",f:function(){cart=[];persist();renderCart();toast("Carrito vacío")}}]});
+    buttons:[{l:"Cancelar",c:"ghost"},{l:"Confirmar",c:"wine",f:function(){cart=[];persist();renderCart();sfx("del");toast("Carrito vacío")}}]});
 }
 function pay(){
   var t=totals();if(!t.n)return;
   var code="CA-"+Date.now().toString().slice(-6);
   dialog({title:"¿Confirmar compra?",text:"Total a pagar: "+money(t.t)+". Es una simulación, no se realiza ningún cobro.",
     buttons:[{l:"Cancelar",c:"ghost"},{l:"Confirmar",c:"",f:function(){
-      cart=[];persist();renderCart();
+      cart=[];persist();renderCart();sfx("ok");
       setTimeout(function(){dialog({icon:'<div class="ok" aria-hidden="true">✓</div>',title:"¡Compra confirmada!",text:"Pedido "+code+" por "+money(t.t)+". Te enviaremos los detalles"+(prof.email?" a "+prof.email:"")+".",
         buttons:[{l:"Seguir comprando",c:"blue",f:function(){go("catalog")}}]})},50);
     }}]});
@@ -368,7 +387,40 @@ $("#ov").addEventListener("click",function(e){if(e.target===this)closeDlg(true)}
 var tt;function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("show")},2200)}
 function refocus(sel){var e=$(sel);if(e)e.focus()}
 
+/* ---------- Sonido y tamaño de letra ---------- */
+var snd=load("andina_snd",true),fs=load("andina_fs",0),AC=null;
+var FS=[1,1.15,1.3],FSN=["normal","grande","muy grande"];
+var SEQ={tap:[[660,.05]],nav:[[440,.06],[560,.06]],key:[[900,.03]],add:[[523,.09],[784,.14]],del:[[330,.1],[220,.16]],ok:[[523,.1],[659,.1],[784,.1],[1047,.22]]};
+function sfx(k){
+  if(!snd)return;
+  try{
+    AC=AC||new(window.AudioContext||window.webkitAudioContext)();
+    if(AC.state==="suspended")AC.resume();
+    var t=AC.currentTime;
+    (SEQ[k]||[]).forEach(function(n){
+      var f=n[0]*(k==="key"?1+Math.random()*.25:1),o=AC.createOscillator(),g=AC.createGain();
+      o.type=k==="key"?"square":"sine";o.frequency.value=f;
+      g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(k==="key"?.03:.09,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+n[1]);
+      o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+n[1]+.02);t+=n[1];
+    });
+  }catch(e){}
+}
+function applyFs(){document.documentElement.style.setProperty("--fs",FS[fs]);$("#fsb").setAttribute("aria-label","Tamaño de letra: "+FSN[fs]+". Pulsa para cambiar")}
+function applySnd(){var b=$("#sndb");b.setAttribute("aria-pressed",snd);b.textContent=snd?"🔊":"🔇";b.setAttribute("aria-label",snd?"Sonido activado. Pulsa para silenciar":"Sonido desactivado. Pulsa para activar")}
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b||b.getAttribute("data-a")==="add")return;
+  sfx(b.hasAttribute("data-go")?"nav":"tap");
+});
+document.addEventListener("keydown",function(e){
+  if(e.ctrlKey||e.metaKey||e.altKey)return;
+  var t=e.target.tagName;
+  if(t==="INPUT"&&(e.key.length===1||e.key==="Backspace"||e.key==="Enter"))sfx("key");
+  else if(e.key==="Tab")sfx("nav");
+});
+
 /* ---------- Eventos ---------- */
+$("#sndb").onclick=function(){snd=!snd;save("andina_snd",snd);applySnd();toast(snd?"Sonido activado":"Sonido desactivado")};
+$("#fsb").onclick=function(){fs=(fs+1)%3;save("andina_fs",fs);applyFs();toast("Letra "+FSN[fs])};
 document.addEventListener("click",function(e){
   var g=e.target.closest("[data-go]");if(g){go(g.getAttribute("data-go"));return}
   var b=e.target.closest("[data-a]");if(!b)return;
@@ -392,7 +444,7 @@ $$("[data-p]").forEach(function(i){
 function syncCatalog(){$("#cq").value=ui.q;$("#sort").value=ui.sort;$("#hq").value=ui.q;save("andina_ui",ui);renderChips();renderList()}
 
 /* ---------- Inicio de la app ---------- */
-renderHome();syncCatalog();persist();renderCart();
+applyFs();applySnd();renderHome();syncCatalog();persist();renderCart();
 go(ui.view||"home",false);
 })();
 </script>
